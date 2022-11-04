@@ -2,7 +2,7 @@
 
 ## Project Description
 
-*I created this project for the **SheCodes** Responsive Add-on workshop. This project is a **landing** which can be accessed through any web browser: desktop or mobile. It has a responsive design.*
+*I created this project for the **SheCodes** Responsive Add-on workshop. This project is a **landing page** which can be accessed through any web browser: desktop or mobile. It has a responsive design.*
 
 ---
 
@@ -14,7 +14,7 @@
 ### 2. Usage
 
 - You can **access** the landing page in any browser with an internet connection
-- The landing page displays informaiton about different tea types.
+- The landing page displays information about different tea types.
 - You can use the **Sun** or **Moon** icon in the top right corner to switch between **light** and **dark** modes.
 
 ![Landing Page](/src/Screenshot.jpg)
