@@ -10,7 +10,7 @@
     #1b1724 99.1%
   );
   --light: #fdfcfb;
-  --dark: #1b1724;
+  --dark: #171513;
 }
 
 /* GENERAL */
@@ -29,9 +29,15 @@ body {
   margin: 0 auto;
 }
 
+main {
+  background-color: #ffffff;
+  color: var(--dark);
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 6rem 0;
 }
 
 h1,
@@ -62,6 +68,7 @@ h3 {
   font-size: 1.5rem;
   line-height: 3rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -105,6 +112,40 @@ header a {
 
 /* MAIN */
 
+/*Description */
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.image-box {
+  background-image: url("/images/tea2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description h3 {
+  font-size: 1rem;
+  line-height: 2rem;
+  opacity: 0.5;
+  text-align: left;
+}
+
+.description h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  text-align: left;
+}
+
+.description p {
+  font-size: 1rem;
+  line-height: 2rem;
+  opacity: 0.5;
+}
+
 /* ARTICLE */
 
 /* CARDS */
@@ -116,7 +157,7 @@ header a {
 footer {
   text-align: left;
   font-size: small;
-  padding: 6rem 1rem;
+  padding: 0 2rem;
   color: var(--light);
   background-image: linear-gradient(
       rgba(23, 21, 19, 0.8),
@@ -137,9 +178,9 @@ footer h4 {
 
 footer p {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   margin: 0;
-  color: var(--light);
+  color: rgba(253, 252, 251, 0.7);
   opacity: 0.7;
 }
 
@@ -153,12 +194,12 @@ footer li {
   text-align: left;
 }
 
-footer a {
+footer a,
+footer p a {
   line-height: 2rem;
   font-size: 1rem;
   text-decoration: none;
   color: var(--light);
-  opacity: 1;
   font-weight: bold;
 }
 
@@ -172,6 +213,9 @@ footer a {
 
 @media screen and (max-width: 960px) {
   /* GENERAL */
+  section {
+    padding: 3rem 2rem;
+  }
   h1 {
     font-size: 2.5rem;
     line-height: 4rem;
@@ -195,15 +239,22 @@ footer a {
   header a {
     font-size: 0.6rem;
     line-height: 0.8rem;
-
     padding: 1rem 1.5rem;
     margin-top: 2rem;
   }
 
-  /* FOOTER */
-  footer {
-    padding: 2rem;
+  /* MAIN */
+
+  /* Description */
+  .image-box {
+    min-height: 600px;
   }
+  .description {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* FOOTER */
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
