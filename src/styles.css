@@ -1,14 +1,21 @@
 /* VARIABLES */
 :root {
-  --light-bg-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  /* --light-bg-color: linear-gradient(135deg, rgb(253, 252, 251) 0%, #e2d1c3 100%); */
   --dark-accent: #5a544e;
   --light-accent: #e2d1c3;
+  --light-bg-color: linear-gradient(
+    110.6deg,
+    #f6f1ed -18.3%,
+    #eee3db 16.4%,
+    #e5d6c9 68.2%,
+    #e2d1c3 99.1%
+  );
   --dark-bg-color: linear-gradient(
     110.6deg,
-    rgb(156, 116, 129) -18.3%,
-    rgb(67, 54, 74) 16.4%,
-    rgb(47, 48, 67) 68.2%,
-    #1b1724 99.1%
+    #716962 -18.3%,
+    #443f3a 16.4%,
+    #2d2a27 68.2%,
+    #171513 99.1%
   );
   --light: #fdfcfb;
   --dark: #171513;
@@ -151,6 +158,26 @@ header {
   margin: 0 auto;
   text-align: center;
   color: var(--light);
+  position: relative;
+}
+
+.theme-button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: var(--dark-accent);
+  color: var(--dark);
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.theme-button:hover {
+  background-color: var(--light-accent);
 }
 
 /* MAIN */
@@ -299,6 +326,34 @@ footer a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   gap: 65px;
+}
+
+/* DARK MODE */
+.dark {
+  background: var(--dark-bg-color);
+}
+
+.dark main {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark .card {
+  background-color: var(--dark);
+}
+
+.dark .favorites {
+  background-color: var(--dark-accent);
+}
+
+.dark .theme-button {
+  background-color: var(--light-accent);
+  color: var(--dark);
+}
+
+.dark .theme-button:hover {
+  background-color: var(--dark);
+  color: var(--light-accent);
 }
 
 /* RESPONSIVE */
