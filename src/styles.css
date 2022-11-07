@@ -398,6 +398,10 @@ footer a:hover {
   border: 8px solid var(--dark-accent);
 }
 
+.dark table img {
+  filter: brightness(0.8) saturate(90%);
+}
+
 .dark .theme-button {
   background-color: var(--light-accent);
   color: var(--dark);
